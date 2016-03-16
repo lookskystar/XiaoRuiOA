@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="XiaoRuiOA"
+  id="myeclipse.1387874257872"
+  context-root="/xroa"
+  j2ee-spec="5.0"
+  archive="XiaoRuiOA.war">
+  <attributes>
+    <attribute name="webrootdir" value="/WebRoot" />
+  </attributes>
+</project-module>
+

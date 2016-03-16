@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" 
+"http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="common" extends="struts-default">
+	<!-- <interceptors>
+			<interceptor name="exceptionInterceptor" class="com.foodproject.common.util.ExceptionInterceptor"></interceptor>
+			<interceptor-stack name="myDefaultStack">       
+	        	<interceptor-ref name="defaultStack"/>
+				<interceptor-ref name="exceptionInterceptor"/>
+			</interceptor-stack>
+		</interceptors>
+		<default-interceptor-ref name="myDefaultStack"></default-interceptor-ref>
+		
+		<global-results>   
+          <result name="g_error">/common/error.jsp</result>   
+        </global-results>
+       -->	  
+	</package>
+</struts>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" 
+"http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="query" namespace="/" extends="jfreechart-default">
+		<action name="query" class="queryAction">
+			<result name="show" type="chart">
+			  <param name="width">600</param>
+			  <param name="height">400</param>
+			</result>
+			<result name="problem_repair">query/problem_repair_rec.jsp</result>
+			<result name="count">query/count.jsp</result>
+		</action>
+	</package>
+</struts>

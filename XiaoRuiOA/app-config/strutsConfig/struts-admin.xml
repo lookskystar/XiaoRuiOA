@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" 
+"http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="admin" namespace="/" extends="common">
+		<action name="loginAction" class="loginAction">
+			<result name="main" type="redirect">main.jsp</result>
+			<result name="loginOut" type="redirect">login.jsp</result>
+		</action>
+		<action name="functionAction" class="functionAction">
+			<result name="left">/left.jsp</result>
+		</action>
+		<action name="problemAction" class="problemAction">
+			<result name="problem">admin/problem/problems.jsp</result>
+			<result name="addproblem">admin/problem/addproblem.jsp</result>
+			<result name="editeproblem">admin/problem/editeproblem.jsp</result>
+		</action>
+		
+			<!-- 人员管理 -->
+		<action name="usersAction" class="usersAction">
+	  		<result name="userindex">admin/user/userindex.jsp</result>
+			<result name="users">admin/user/users.jsp</result>
+			<result name="adddept">admin/user/adddept.jsp</result>
+			<result name="editdept">admin/user/editdept.jsp</result>
+			<result name="updateuserbz">admin/user/updateuserbz.jsp</result>
+			<result name="adduser">admin/user/adduser.jsp</result>
+			<result name="userinfo">admin/user/userinfo.jsp</result>
+			<result name="edituser">admin/user/edituser.jsp</result>
+	  	</action>
+	  	
+	<!-- 角色管理 -->  	
+	  	<action name="rolesAction" class="rolesAction">
+	  		<result name="roles">admin/role/roles.jsp</result>
+			<result name="addrole">admin/role/addroles.jsp</result>
+			<result name="editrole">admin/role/editroles.jsp</result>
+			<result name="topower">admin/role/topower.jsp</result>
+	  	</action>
+	  <!-- 地区管理 -->	
+	  	<action name="areaAction" class="areaAction">
+	  		<result name="areas">admin/area/areas.jsp</result>
+	  		<result name="addArea">/admin/area/addArea.jsp</result>
+	  		<result name="area">/admin/area/editArea.jsp</result>
+	  		<result name="customInput">admin/area/custom_list.jsp</result>
+	  		<result name="addCustomInput">admin/area/add_custom.jsp</result>
+	  		<result name="editCustomInput">admin/area/edit_custom.jsp</result>
+	  	</action>
+	</package>
+</struts>

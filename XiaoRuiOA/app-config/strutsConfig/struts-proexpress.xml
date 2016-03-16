@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" 
+"http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="proexpress" namespace="/" extends="common">
+		<action name="proexpressAction" class="proexpressAction">
+			<result name="receipt">/proexpress/receipt_list.jsp</result>
+			<result name="add_receipt">/proexpress/add_receipt.jsp</result>
+			<result name="send_receipt">/proexpress/send_receipt.jsp</result>
+			<result name="check_receipt">/proexpress/check_receipt.jsp</result>
+			<result name="back_rec">/proexpress/back_rec.jsp</result>
+			<result name="detail">/proexpress/detail.jsp</result>
+			<result name="back_rec_list">/proexpress/back_rec_list.jsp</result>
+			<result name="resume">/product/resume.jsp</result>
+			<result name="addProduct">proexpress/add_product.jsp</result>
+		</action>
+		<action name="searchAction" class="searchAction"></action>
+	</package>
+</struts>
